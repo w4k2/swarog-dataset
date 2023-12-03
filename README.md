@@ -47,3 +47,9 @@ The dataframes of `SWAROG-dataset` are organized with tle following manner:
 |`E{0:383}`| 384 consecutive fields of established embedding for article's body for the moment of acquisition. | `float32` |
 
 ## Citation policy
+
+If you will use this dataset in your research, please use the following citation
+
+```
+Kozik, Rafał, et al. "SWAROG Project Approach to Fake News Detection Problem." Computational Intelligence in Security for Information Systems Conference. Cham: Springer Nature Switzerland, 2023.
+```
