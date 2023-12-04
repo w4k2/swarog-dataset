@@ -21,20 +21,16 @@ To encourage users to use a proper experimental protocol, data is made available
 ```python
 import pandas as pd
 
-# Load and show labeled data
+# Load labeled data
 labeled_data = pd.read_hdf('data/labeled_data_embed.h5')
-
-print(labeled_data)
 
 # Load nolabel data
 nolabel_data = pd.read_hdf('data/nolabel_data_embed.h5')
-
-print(nolabel_data)
 ```
 
 ## Data structure
 
-The dataframes of `SWAROG-dataset` are organized with tle following manner:
+The dataframes of `SWAROG-dataset` are organized with the following manner:
 
 |Key|Description|dtype|
 |---|---|---|
@@ -51,5 +47,12 @@ The dataframes of `SWAROG-dataset` are organized with tle following manner:
 If you will use this dataset in your research, please use the following citation
 
 ```
-Kozik, Rafał, et al. "SWAROG Project Approach to Fake News Detection Problem." Computational Intelligence in Security for Information Systems Conference. Cham: Springer Nature Switzerland, 2023.
+@inproceedings{kozik2023swarog,
+  title={SWAROG Project Approach to Fake News Detection Problem},
+  author={Kozik, Rafa{\l} and Komorniczak, Joanna and Ksieniewicz, Pawe{\l} and Pawlicka, Aleksandra and Pawlicki, Marek and Chora{\'s}, Micha{\l}},
+  booktitle={Computational Intelligence in Security for Information Systems Conference},
+  pages={79--88},
+  year={2023},
+  organization={Springer}
+}
 ```
