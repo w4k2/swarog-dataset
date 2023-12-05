@@ -34,12 +34,12 @@ The dataframes of `SWAROG-dataset` are organized with the following manner:
 
 |Key|Description|dtype|
 |---|---|---|
-|`url`| Absolute URL address to the analyzed article. | `object` |
-|`title`| Title of the article according to `<title>` tag at the moment of acquisition. | `object` |
+|`url`| SHA-1 sum of URL address to the analyzed article. | `object` |
 |`download_timestamp`| Epoch time of the moment of acquisition. | `object` |
 |`publication_timestamp`| Identified epoch time of the moment of article publication. | `object` |
 |`Poll_id`| Identifier of a labeling poll. **[only for labeled data]** | `int64` |
 |`P{5:17}`| 12 consecutive fields of binary labeling structure. **[only for labeled data]** | `int64` |
+|`T{0:383}`| 384 consecutive fields of established embedding for article's titles for the moment of acquisition. | `float32` |
 |`E{0:383}`| 384 consecutive fields of established embedding for article's body for the moment of acquisition. | `float32` |
 
 ## Citation policy
