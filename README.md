@@ -42,6 +42,26 @@ The dataframes of `SWAROG-dataset` are organized with the following manner:
 |`T{0:383}`| 384 consecutive fields of established embedding for article's titles for the moment of acquisition. | `float32` |
 |`E{0:383}`| 384 consecutive fields of established embedding for article's body for the moment of acquisition. | `float32` |
 
+## Labels description
+
+SWAROG's approach for annotation differs from standard labeling protocol, explicitly assigning each data object into one of the *fake news* categories, proposing extended definition build around 13 questions connected with this phenomenon.
+
+| Key | Question |
+|---|---|
+| P5 | Is there at least one reliable source that confirms all the information contained in the content? |
+| P6 | Is most of the information provided confirmed by reliable sources? |
+| P7 | Is none of the information confirmed by reliable sources? |
+| P8 | Does the statement refer to current (at the time of creation of the statement) data? |
+| P9 | Is additional information required to correctly understand the content? |
+| P10 | Does the statement contain any inaccuracies? |
+| P11 | Does the statement contain fragments taken out of context? |
+| P12 | Does the author of the statement use cherry picking? |
+| P13 | Is the author of the statement trying to mislead the reader? |
+| P14 | Is the content satirical? |
+| P15 | Does the author admit that the facts presented are made up? |
+| P16 | Does the statement contain political promises? |
+| P17 | Does the statement contain religious content? |
+
 ## Citation policy
 
 If you will use this dataset in your research, please use the following citation
